@@ -1,4 +1,124 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    width: 100%;
+   
+}
+.header-top{
+    width: auto;
+    height: 36px;
+    background-color: #005ec4;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 200px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-top .container{
+    width: 1400px;
+}
+
+.header-main{
+    display: flex;
+    justify-content: center;
+}
+.header-main .container{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 1110px;
+    align-items: center;
+}
+.header-main .container .search{
+    width: 620px;
+    height: 48px;
+    border: 1px solid #005ec4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-main .container .search .search-txt{
+    width: 50%;
+    height: auto;
+    display: flex;
+}
+.header-main .container .search .search-txt input{
+    width: 100%;
+    border: none;
+    outline: 0;
+    padding: 0 5%;
+    font-size: 15px;
+}
+.header-main .container .search .search-right{
+    width: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.header-main .container .search .search-right .search-item{
+    width: 1px;
+    padding: 5% 0px;
+    border: 1px solid #005ec4;
+}
+.header-main .container .search .search-right .search-select .search-dropdown{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.search-select:hover .item-dropdown{ 
+    display: block;
+    visibility: visible;
+}
+.search-select .item-dropdown{
+    display: none;
+    position: absolute;
+    top: 90%;
+    width: 90%;
+    height: 100px;
+    background: white ;
+    z-index: 9;
+    overflow: auto;
+}
+.search-select .item-dropdown a{
+    text-decoration:none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #005ec4;
+    padding:5%;
+}
+.search-select .item-dropdown a span{
+    display: block;
+    padding-left: 5%;
+    border-bottom: 0.5px solid gray;
+}
+.search-right img{
+    cursor: pointer;
+}
+.cart{
+    background: #29324e;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.cart span{
+    padding: 5px;
+    background: yellow;
+    columns: #29324e;
+    font-weight: bold;
+    font-size: 15px;
+}
+.header-bottom{
+    width: 100%;
+    background-color: gray;
 }
