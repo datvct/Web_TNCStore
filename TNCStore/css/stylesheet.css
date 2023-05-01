@@ -33,6 +33,9 @@
     width: 1110px;
     align-items: center;
 }
+.header-main .container .logo{
+    display: flex;
+}
 .header-main .container .search{
     width: 620px;
     height: 48px;
@@ -121,4 +124,64 @@
 .header-bottom{
     width: 100%;
     background-color: gray;
+}
+#container {
+    width: 100%;
+}
+.container-menu{
+    width: 100%;
+    background-color: #EEF0F7;
+    display: flex;
+    justify-content: center;
+}
+.frame-menu{
+    width: 1110px;
+    height: 51px;
+    background-color: #EEF0F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-left{
+    width: 645px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#font-menu{
+    font-size: 15px;
+    font-family: "Chakra Petch", sans-serif;
+}
+.DMSP{
+    width: 250px;
+    height: 51px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list{
+    display: none;
+}
+.DMSP:hover + .list {
+    display: block;
+  }
+.XDCH{
+    width: 220px;
+    height: 51px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.TT{
+    width: 100px;
+    height: 51px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-right{
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
