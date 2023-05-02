@@ -265,7 +265,7 @@
     left: 42px;
     background-color: #F9495F;
     color: #FFFFFF;
-    border-color: #F9495F;
+    border: none;
     transform: skew(-20deg);
 }
 .header-trademark{
@@ -274,6 +274,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.name-trademark{
+    width: 1110px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.one-trademark{
+    width: 185px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-left{
+    position: absolute;
+    top: 40px;
+    background-color: #99a0ad;
+    border: none;
+    height: 40px;
+    width: 40px;
+    opacity: 0.7;
+}
+.btn-right{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #99a0ad;
+    border: none;
+    height: 40px;
+    width: 40px;
+    opacity: 0.7;
 }
 .img-left{
     position: sticky;
