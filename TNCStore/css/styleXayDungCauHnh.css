@@ -17,9 +17,12 @@
     font-weight: 200px;
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 .header-top .container{
     width: 1400px;
+    display: flex;
+    justify-content: right;
 }
 
 .header-main{
@@ -33,7 +36,7 @@
     width: 1110px;
     align-items: center;
 }
-.header-main .container .logo{
+.logo{
     display: flex;
 }
 .header-main .container .search{
@@ -123,67 +126,137 @@
 }
 .header-bottom{
     width: 100%;
-    background-color: gray;
+    background-color: #eef0f7;
 }
-#container {
-    width: 100%;
+.container{
+    width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
-.container-menu{
-    width: 100%;
-    background-color: #EEF0F7;
+.header-bottom{
     display: flex;
     justify-content: center;
 }
-.frame-menu{
-    width: 1110px;
-    height: 51px;
-    background-color: #EEF0F7;
+.header .header-bottom .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.menu-left{
-    width: 645px;
+    position: relative;
+}.header-bottom-left{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#font-menu{
+    font-weight: bold;
     font-size: 15px;
-    font-family: "Chakra Petch", sans-serif;
-}
-.DMSP{
-    width: 250px;
-    height: 51px;
-    display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     align-items: center;
+    height: 50px;
 }
-.list{
+.header .header-bottom .container .header-bottom-left .item-bottom{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 15px 16px;
+    color: #29324e;
+    cursor: pointer;
+    width: 250px ;
+}
+.item-bottom .title-item{
+    display: flex;
+    align-items: center;
+    padding: 3% 0;
+}
+.item-bottom span{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #29324e;
+    cursor: pointer;
+}
+.item-bottom .menu-category{
+    position: absolute;
+    padding: 15px 0px;
+    background-color: white;
+    list-style-type: none;
     display: none;
+    z-index: 99;
+    background: #fff;
+    box-sizing: border-box;
+    width: 80%;
 }
-.DMSP:hover + .list {
+.item-bottom:hover  .menu-category{
     display: block;
-  }
-.XDCH{
-    width: 220px;
-    height: 51px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    visibility: visible;
+   
 }
-.TT{
-    width: 100px;
-    height: 51px;
+
+.header-bottom .item-menu-category{
     display: flex;
-    justify-content: space-around;
+    width: 254px;
+    padding: 16px;
     align-items: center;
-}
-.menu-right{
-    width: 170px;
-    display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #ededed;
+    background-color: white;
+}
+.header-bottom .item-menu-category:last-child{
+    border-bottom: none;
+}
+.header-bottom .item-menu-category:hover {
+    background-color: #005ec4;
+}
+.header-bottom .item-menu-category a {
+    text-decoration: none;
+    color: black;
+}
+.item-bottom .menu-category .menu-sub{
+    list-style: none;
+    padding: 15px 50px;
+    position: absolute;
+    left: 250px;
+    top: 20px;
+    width: 600px;
+    display: none;
+    box-sizing: border-box;
+}
+.item-bottom .menu-category .item-menu-category:hover .menu-sub{
+    display: block;
+    visibility: visible;
+}
+
+.item-bottom .menu-sub li{
+    list-style: none;
+    padding:2% 0px;
+    width: 225px;
+}
+.item-bottom .menu-sub h4{
+    font-weight: 700;
+    font-size: 20px;
     align-items: center;
+    color: #005ec4;
+    text-transform: uppercase;
+}
+.item-bottom .menu-sub li{
+    color: #535353;
+    display: block;
+    float: left;
+    clear: none;
+    font-weight: bold;
+}
+.item-bottom .menu-sub .img-sub{
+    position: absolute;
+    top: 100px;
+    right: -150px;
+    max-width: 250px;
+    height: 100%;
+    display: flex;
+}
+
+.header-bottom-right .menu-right{
+    display: flex;
+    gap: 10px;
 }
 #container {
     display: flex;
@@ -316,7 +389,7 @@
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .img-right{
     position: sticky;
@@ -326,7 +399,7 @@
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 .frame-header{
     height: 270px;
