@@ -60,6 +60,9 @@
     padding: 0 5%;
     font-size: 15px;
 }
+.search-right .img-find{
+    margin-bottom: 0;
+}
 .header-main .container .search .search-right{
     width: 255px;
     display: flex;
