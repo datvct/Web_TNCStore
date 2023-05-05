@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styleXayDungCauHnh.css">
+    <link rel="stylesheet" href="css/confirmdon.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>TNC-Store</title>
+    <title>Giỏ Hàng</title>
 </head>
 <body>
     <header id="header">
@@ -41,10 +41,10 @@
                                 </a>
                             </div>
                         </div>
-                        <img src="img/search-icon.svg" alt="">
+                        <img class="img-find" src="img/search-icon.svg" alt="">
                     </div>
                 </div>
-                <div class="cart" id="modal-cart" >
+                <div class="cart" id="modal-cart">
                     <img src="img/cart-icon.svg" alt="">
                     <span class="count-item">0</span>
                 </div>
@@ -491,14 +491,12 @@
                         <div class="title-item">
                             <img src="img/icon-setting.png" alt="">
                             <span>XÂY DỰNG CẤU HÌNH</span>
-                            <i class='bx bx-chevron-down'></i>
                         </div>
                     </div>
                     <div class="item-bottom">
                         <div class="title-item">
                             <img src="img/icon-sale.png" alt="">
                             <span>LAPTOP GAMING CHẤT</span>
-                            <i class='bx bx-chevron-down'></i>
                         </div>
                     </div>
                     <div class="item-bottom">
@@ -525,90 +523,98 @@
             <img src="img/bndong.jpg" alt="">
         </div>
         <div class="container-main">
-            <div class="path">
-                    <img src="img/home.svg" alt="">
-                    <img src="img/material-symbols_keyboard-arrow-right.svg" alt="">
-                    <p id="font-path">Trang chủ</p>
-                    <img src="img/material-symbols_keyboard-arrow-right.svg" alt="">
-                    <p id="font-path">Xây dựng cấu hình PC</p>
+            <div class="cart-container">
+                <div class="cart-product">
+                    <div class="cart-header">
+                        <div class="cart-header-iteam active col-sm-4">
+                            <span>1. Chọn sản phẩm</span>
+                        </div>
+                        <div class="cart-header-iteam active col-sm-4">
+                            <span>2. Xác nhận đơn hàng</span>
+                        </div>
+                        <div class="cart-header-iteam col-sm-4">
+                            <span>3. Thanh toán</span>
+                        </div>
+                    </div>
+                    <div class="cart-main">
+                        <div class="title">THÔNG TIN SẢN PHẨM
+                        </div>
+                        <div class="icon">
+                            <a href="">
+                                <i class='bx bx-download' style='color:#0d51f2'  ></i>
+                                Tải báo giá
+                            </a>
+                            <a href="">
+                                <i class='bx bx-printer' style='color:#0d51f2' ></i>
+                                In báo giá
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">Bạn đang không có sản phẩm nào trong giỏ hàng.</div>
+                </div>
+                <div class="cart-total">
+                    <div class="cart-prices">
+                        <div class="title">Thông tin giỏ hàng</div>
+                        <div>
+                            Số lượng sản phẩm
+                            <span class="p-count">0</span>
+                        </div>
+                        <div>
+                            Tổng chi phí 
+                            <span class="prices">0 đ</span>
+                        </div>
+                        <div class="VAT">Đã bao gồm VAT (nếu có)</div>
+                        <a href="">ĐẾN GIỎ HÀNG</a>
+                        <a href="" class="delete">XÓA GIỎ HÀNG</a>
+                        <a href="" class="xemgiohang">XEM SẢN PHẨM KHÁC</a>
+                    </div>
+                    <div class="cart-info">
+                        <div class="info">
+                            <div>
+                                <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                Hỗ trợ trả góp 0%, trả trước 0đ
+                            </div>
+                            <div>
+                                <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                Hoàn tiền 200% khi phát hiện hàng giả
+                            </div>
+                            <div>
+                                <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                Giao hàng nhanh 3H nội thành Hà Nội
+                            </div>
+                            <div>
+                                <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                Giao hàng từ 5 - 7 ngày toàn quốc
+                            </div>
+                            <div>
+                                <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                Đội ngũ kĩ thuật hỗ trợ online 7/7
+                            </div>
+                        </div>
+                        <div class="bank">
+                            <a href="">
+                                <img src="img/tien-mat.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="img/internet-bank.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="img/mastercard.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="img/visa.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="product-selection-section">
-                <div class="header-product-selection-section">
-                    <div class="rectangle"></div>
-                    <p id="font-header">LỰA CHỌN GIẢI PHÁP</p>
-                    <div class="rectangle"></div>
-                </div>
-                <div class="name-product">
-                    <div class="frame-product">
-                        <div class="product">
-                            <img src="img/product-xdch-1.svg" alt="">
-                            <p id="font-gaming">PRO GAMING</p>
-                            <p id="font-detail">PC cấu hình khủng cùng linh kiện cao cấp, đem tới trải nghiệm gaming hấp dẫn nhất.</p>
-                            <button class="btn-see-more">Xem thêm</button>
-                        </div>
-                        <div class="product">
-                            <img src="img/product-xdch-2.svg" alt="">
-                            <p id="font-gaming">PRO GAMING</p>
-                            <p id="font-detail">PC có tính thẩm mỹ cao năng lực xử lý vượt trội cho các nhà sáng tạo nội dung.</p>
-                            <button class="btn-see-more">Xem thêm</button>
-                        </div>
-                        <div class="product">
-                            <img src="img/product-xdch-3.svg" alt="">
-                            <p id="font-gaming">PRO GAMING</p>
-                            <p id="font-detail">Cấu hình PC tối ưu cho Studio âm nhạc, dành cho Composer/Producer</p>
-                            <button class="btn-see-more">Xem thêm</button>
-                        </div>
-                    </div>
-                    <div class="frame-product">
-                        <div class="product">
-                            <img src="img/product-xdch-4.svg" alt="">
-                            <p id="font-gaming">PRO GAMING</p>
-                            <p id="font-detail">Cấu hình PC chuyên dụng cho các công việc thiết kế, kiến trúc, đồ họa đòi hỏi hiệu suất cao.</p>
-                            <button class="btn-see-more">Xem thêm</button>
-                        </div>
-                        <div class="product">
-                            <img src="img/product-xdch-5.svg" alt="">
-                            <p id="font-gaming">PRO GAMING</p>
-                            <p id="font-detail">PC dựng sẵn với kích thước và hiệu năng phù hợp cho công việc văn phòng và giải trí tại gia.</p>
-                            <button class="btn-see-more">Xem thêm</button>
-                        </div>
-                        <div class="product">
-                            <img src="img/product-xdch-6.svg" alt="">
-                            <p id="font-gaming">PRO GAMING</p>
-                            <p id="font-detail">Thế giới ảo, trải nghiệm thật với cấu hình PC chuyên Virtual Reality</p>
-                            <button class="btn-see-more">Xem thêm</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-trademark">
-                    <div class="rectangle"></div>
-                    <p id="font-header">CÁC THƯƠNG HIỆU</p>
-                    <div class="rectangle"></div>
-                </div>
-                <div class="name-trademark">
-                    <div class="one-trademark">
-                        <img src="img/acer.svg" alt="">
-                    </div>
-                    <div class="one-trademark">
-                        <img src="img/adata.svg" alt="">
-                    </div>
-                    <div class="one-trademark">
-                        <img src="img/aero.svg" alt="">
-                    </div>
-                    <div class="one-trademark">
-                        <img src="img/afox.svg" alt="">
-                    </div>
-                    <div class="one-trademark">
-                        <img src="img/akko.svg" alt="">
-                    </div>
-                    <div class="one-trademark">
-                        <img src="img/amdo.svg" alt="">
-                    </div>
-                    <button class="btn-left"><img src="img/arrowleft.svg" alt=""></button>
-                    <button class="btn-right"><img src="img/arrowright.svg" alt=""></button>
-                </div>
+            <div class="header-product-selection-section">
+                <div class="rectangle"></div>
+                <p id="font-header">SẢN PHẨM VỪA XEM</p>
+                <div class="rectangle"></div>
             </div>
         </div>
+
         <div class="img-right">
             <img src="img/btndong2.jpg" alt="">
         </div>
@@ -684,6 +690,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/index.js"></script>
     <script src="js/cart.js"></script>
 </body>
 </html>
