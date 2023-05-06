@@ -9,3 +9,14 @@ btncart.addEventListener("click", function(){
 btnclose.addEventListener("click", function(){
     document.querySelector('.modal-mask').style.display ='none'; 
 })
+
+
+function isCheck(){
+    if(document.querySelector('#checkbox').checked){
+        document.querySelector('.group-open-checkbox').style.display ='none';
+    }
+    else{
+        document.querySelector('.group-open-checkbox').style.display ='block';
+    }
+}
+
