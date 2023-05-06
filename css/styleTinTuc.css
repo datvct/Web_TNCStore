@@ -169,6 +169,23 @@
     align-items: center;
     padding: 3% 0;
 }
+
+@keyframes blink {
+    0% {
+        color: #fff
+    }
+
+    to {
+        color: #ff874b
+    }
+}
+
+.item-bottom .title-item .text.event span{
+    transition: 1s ease-in;
+    animation: blink 1.2s;
+    animation-iteration-count: infinite;
+}
+
 .item-bottom span{
     margin-left: 15px;
     margin-right: 15px;

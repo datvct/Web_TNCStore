@@ -18,3 +18,15 @@ btncart.addEventListener("click", function(){
 btnclose.addEventListener("click", function(){
     document.querySelector('.modal-mask').style.display ='none'; 
 })
+
+
+$(document).ready(function(){
+  $('#item').slick({
+    lazyLoad: 'true',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: $('.btn-left-banner'),
+    nextArrow: $('.btn-right-banner'),
+  });
+});
+
