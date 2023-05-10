@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleProGamingPC.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    
+    <title>TNC-Store</title>
+</head>
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="container">
+                <p>Hotline : (024) 3628.8790 - (086) 830.2123 • Email: cskh@tncstore.vn</p>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/tnc-logo.svg  " alt="">
+                </div>
+                <div class="search">
+                    <div class="search-txt">
+                        <input type="text"  placeholder="Nhập sản phẩm cần tìm...">
+                    </div>
+                    <div class="search-right">
+                        <div class="search-item"></div>
+                        <div class="search-select">
+                            <div class="search-dropdown">
+                                <span></span>
+                                <i class='bx bx-caret-down' ></i>
+                            </div>
+                            <div class="item-dropdown">
+                                <a href="">
+                                    <span>Tất cả danh mục</span>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="img/search-icon.svg" alt="">
+                    </div>
+                </div>
+                <div class="cart" id="modal-cart" >
+                    <img src="img/cart-icon.svg" alt="">
+                    <span class="count-item">0</span>
+                </div>
+                <div class="modal-mask">
+                    <div class="modal-wrapper">
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <span class="modal-title">
+                                    <div>Bạn đang có 0 sản phẩm trong giỏ hàng</div>
+                                </span>
+                                <span class="modal-close">
+                                    <button type="button" class="btn btn-secondary" id="btnclose" data-dismiss="modal">X</button>
+                                </span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="cart-modal">
+                                    <div class="cart-product">
+                                        <div class="cart-null">
+                                            Bạn đang không có sản phẩm nào <br>
+                                            trong giỏ hàng.
+                                        </div>
+                                    </div>
+                                    <div class="cart-total">
+                                        <div class="cart-prices">
+                                            <div class="title">Thông tin giỏ hàng</div>
+                                            <div>
+                                                Số lượng sản phẩm
+                                                <span class="p-count">0</span>
+                                            </div>
+                                            <div>
+                                                Tổng chi phí 
+                                                <span class="prices">0 đ</span>
+                                            </div>
+                                            <div class="VAT">Đã bao gồm VAT (nếu có)</div>
+                                            <a href="xacnhandonhang.html">ĐẾN GIỎ HÀNG</a>
+                                            <a href="" class="delete">XÓA GIỎ HÀNG</a>
+                                            <a href="index.html" class="xemgiohang">XEM SẢN PHẨM KHÁC</a>
+                                        </div>
+                                        <div class="cart-info">
+                                            <div class="info">
+                                                <div>
+                                                    <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                                    Hỗ trợ trả góp 0%, trả trước 0đ
+                                                </div>
+                                                <div>
+                                                    <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                                    Hoàn tiền 200% khi phát hiện hàng giả
+                                                </div>
+                                                <div>
+                                                    <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                                    Giao hàng nhanh 3H nội thành Hà Nội
+                                                </div>
+                                                <div>
+                                                    <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                                    Giao hàng từ 5 - 7 ngày toàn quốc
+                                                </div>
+                                                <div>
+                                                    <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                                    Đội ngũ kĩ thuật hỗ trợ online 7/7
+                                                </div>
+                                            </div>
+                                            <div class="bank">
+                                                <a href="">
+                                                    <img src="img/tien-mat.svg" alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img src="img/internet-bank.svg" alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img src="img/mastercard.svg" alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img src="img/visa.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom-left">
+                    <div class="item-bottom">
+                        <div class="title-item">
+                            <img src="img/DmSp.png" alt="">
+                            <span>DANH MỤC SẢN PHẨM</span>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                        <ul class="menu-category">
+                            <li class="item-menu-category">
+                                <a href="">Xây dựng cấu hình PC</a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Xây dựng cấu hình PC</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">PRO GAMING PC</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PRO WORKSTATION</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PRO DUCTIVITY</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PRO CREATOR</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PRO AUDIO</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PRO VR</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/PC-a (1).png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Máy Tính Văn Phòng. AIO, Mini PC </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Máy Tính Văn Phòng. AIO, Mini PC</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Máy Tính Văn Phòng TNC</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Máy Tính Để Bàn DELL</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Máy Tính Để Bàn HP</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Máy Tính Intel NUC</a>
+                                    </li>
+
+                                    <li class="item-sub">
+                                        <a href="">Máy Tính Để Bàn ASUS</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Máy tính Apple iMac</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Laptops </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Laptops</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Asus</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Acer</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Dell</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop HP</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Lenovo</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Gigabyte</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop MSI</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop LG</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Văn Phòng</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Phụ kiện, Balo laptop</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Đế Tản Nhiệt Laptop</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/Laptop-c.png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Apple </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Apple</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">iPhone</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Apple Macbook</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">ipad</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">iMac</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Macbook</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Linh kiện máy tính </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Linh kiện máy tính</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">CPU - Bộ vi xử lý</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Mainboard - Bo mạch chủ</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">VGA - Card màn hình</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Ram - Bộ nhớ trong</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Ổ cứng HDD</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Ổ cứng SSD</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PSU - Nguồn máy tính</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Case - Vỏ máy tính</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Combo Linh Kiện</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/linh-kien-c (1).png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">MÀN HÌNH MÁY TÍNH </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">MÀN HÌNH MÁY TÍNH</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình HP</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình Đồ Họa</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình DELL</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình Viewsonic</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình Văn Phòng</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình LG</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình ASUS</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình ACER</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình MSI</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/man-hinh-b.png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Gaming Gears </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Gaming Gears </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Bàn Phím Cơ</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Bàn di chuột</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Ghế Công Thái Học</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Microphone</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Ghế Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Chuột Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Tai Nghe Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Thiết bị Stream</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Bàn Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Keycaps</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/gear-b.png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">AUDIO </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Gaming Gears </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Loa Nghe Nhạc</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Loa Máy Tính</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Tai Nghe Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Tai Nghe True Wireless</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Phụ Kiện - Tản Nhiệt PC </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Phụ Kiện - Tản Nhiệt PC </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Tản nhiệt khí cho PC</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Tản nước ALL IN ONE</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Quạt Tản Nhiệt PC</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Dây Nối Dài - Dây Riser</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Giá Đỡ Màn Hình</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Gía Đỡ VGA</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/tan-nhiet-b.png" alt="">
+                                    </div>
+                                </ul>           
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Thiết bị văn phòng </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Thiết bị văn phòng </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Loa Máy Tính</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Phần mềm bản quyền</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Bàn phím - Chuột</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Bộ bàn phím chuột không dây</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Máy in Laser</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Webcam</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Bộ Chia/Hub USB</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/van-phong-a.png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Thiết bị mạng </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Thiết bị mạng </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Router WiFi</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Card WiFi</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/thiet-bi-mang.png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Hàng Cũ - Giá Tốt </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Hàng Cũ - Giá Tốt </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Card màn hình cũ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-bottom"> 
+                        <div class="title-item">
+                            <img src="img/icon-setting.png" alt="">
+                            <a href=""><span>XÂY DỰNG CẤU HÌNH</span></a>
+                        </div>
+                    </div>
+                    <div class="item-bottom">
+                        <div class="title-item">
+                            <img src="img/icon-sale.png" alt="">
+                            <a href="" class="text event"><span >LAPTOP GAMING CHẤT</span></a>
+                        </div>
+                    </div>
+                    <div class="item-bottom">
+                        <div class="title-item">
+                            <a href=""><span>TIN TỨC</span></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="header-bottom-right">
+                    <div class="menu-right">
+                        <img src="img/fb-icon.svg" alt="">
+                        <img src="img/yt-icon.svg" alt="">
+                        <img src="img/instagram-icon.svg" alt="">
+                        <img src="img/png-xanh.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="img-left">
+            <img src="img/bndong.jpg" alt="">
+        </div>
+        <div class="container-main">
+            <div class="path">
+                <img src="img/home.svg" alt="">
+                <img src="img/material-symbols_keyboard-arrow-right.svg" alt="">
+                <p id="font-path">Trang chủ</p>
+                <img src="img/material-symbols_keyboard-arrow-right.svg" alt="">
+                <p id="font-path">PRO GAMING PC</p>
+            </div>
+            <div class="product">
+                <div class="product-detail">
+                    <div class="product-detail-left">
+                        <div class="frame-list-img-size-big">
+                            <div class="slider-img-size-big">
+                                    <img src="img/ProLapTop-img-size-big1.svg" alt="">
+                                    <iframe src="https://www.youtube.com/embed/mj6dY7acNNE" title="YouTube video player" 
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                                    <img src="img/ProLapTop-img-size-big2.svg" alt="">
+                                    <img src="img/ProLapTop-img-size-big3.svg" alt="">
+                                    <img src="img/ProLapTop-img-size-big4.svg" alt="">
+                                    <img src="img/ProLapTop-img-size-big5.svg" alt="">
+                            </div>
+                            <button class="btn-left-img-size-big"><img src="img/arrowleft.svg" alt=""></button>
+                            <button class="btn-right-img-size-big"><img src="img/arrowright.svg" alt=""></button>
+                        </div>
+                        <div class="frame-list-img-size-small">
+                            <div class="slider-img-size-small">
+                                <img src="img/ProLapTop-img-size-small1.svg" alt="">
+                                <img src="img/ProLapTop-img-size-small2.svg" alt="">
+                                <img src="img/ProLapTop-img-size-small3.svg" alt="">
+                                <img src="img/ProLapTop-img-size-small4.svg" alt="">
+                                <img src="img/ProLapTop-img-size-small5.svg" alt="">
+                                <img src="img/ProLapTop-img-size-small6.svg" alt="">
+                                <!-- <img src="img/ProLapTop-img-size-small7.svg" alt="">
+                                <img src="img/ProLapTop-img-size-small7.svg" alt=""> -->
+                            </div>
+                            <button class="btn-left-img-size-small"><img src="img/arrowleft.svg" alt=""></button>
+                            <button class="btn-right-img-size-small"><img src="img/arrowright.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-detail-right">
+                        <div class="titlePC">
+                            <p id="FontPC">PC Gaming - Sniper I3060 - AquaM - WH</p>
+                        </div>
+                        <div class="star">
+                            <div class="Evaluate-star">
+                                <img src="/img/star.svg" alt="">
+                                <img src="/img/star.svg" alt="">
+                                <img src="/img/star.svg" alt="">
+                                <img src="/img/star.svg" alt="">
+                                <img src="/img/star.svg" alt="">
+                                <p id="Font-Evaluate-star">5 đánh giá</p>
+                            </div>
+                            <div class="Guarantee">
+                                <p id="Font-Guarantee">Bảo Hành Theo Linh Kiện</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <p id="Font-detail">- CPU: Intel Core i5 - 13600KF 14C/20T ( Up to 5.1GHz, 24MB )</p>
+                            <p id="Font-detail">- Main: Asus TUF GAMING B660M-PLUS WIFI D4</p>
+                            <p id="Font-detail">- RAM: KIMTIGO Z3 Gaming RGB 16GB (8GBx2) DDR4 3200MHz</p>
+                            <p id="Font-detail">- SSD: GIGABYTE M2 2280 256GB NVMe PCI-Express 3.0 x4</p>
+                            <p id="Font-detail">- VGA: Asus Dual Geforce RTX 3060 O8G White</p>
+                            <p id="Font-detail">- PSU: MSI MAG A650BN 650W - 80 Plus Bronze</p>
+                            <p id="Font-detail">- Vỏ case: MIK LV12 M White</p>
+                        </div>
+                        <div class="quantity">
+                            <div class="quantity-left">
+                                <p id="Font-Stocking">&#8226; CÒN HÀNG</p>
+                                <div class="btn-a-d">
+                                    <p id="Sl">Số lượng</p>
+                                    <div class="add-delete">
+                                        <input class="value" type="text" name="" id="" style="width: 45px;height: 40px;border: 1px solid #005ec4; text-align: center;" value="1">
+                                        <div class="btn-add-delete">
+                                            <span class="add">+</span>
+                                            <span class="delete">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quantity-right">
+                                <p id="old-price">34.765.000 đ</p>
+                                <p id="new-price">25.590.000 đ</p>
+                            </div>
+                        </div>
+                        <div class="btn-add-buy">
+                            <button class="btn-add">THÊM VÀO GIỎ</button>
+                            <button class="btn-buy">MUA HÀNG</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="suport">
+                    <div class="advantage">
+                        <img src="img/LapTop-card.svg" alt="">
+                        <p id="Font-advantage">Hỗ trợ trả góp 0%, trả trước 0đ</p>
+                    </div>
+                    <div class="advantage">
+                        <img src="img/LapTop-money.svg" alt="">
+                        <p id="Font-advantage">Hoàn tiền 200% nếu có hàng giả</p>
+                    </div>
+                    <div class="advantage">
+                        <img src="img/LapTop-car.svg" alt="">
+                        <p id="Font-advantage">Giao hàng nhanh trên toàn quốc</p>
+                    </div>
+                    <div class="advantage">
+                        <img src="img/LapTop-chat.svg" alt="">
+                        <p id="Font-advantage">Hỗ trợ kĩ thuật online 7/7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gifts-promotions">
+                <div class="header-product-selection-section">
+                    <div class="rectangle"></div>
+                    <p id="font-header">QUÀ TẶNG & KHUYẾN MÃI</p>
+                    <div class="rectangle"></div>
+                </div>
+                <div class="frame-gifts-promotions">
+                    <div class="gifts-promotions-left">
+                        <p id="title-gifts-promotions-left">Ưu đãi khi mua sản phẩm</p>
+                        <div class="content-gifts-promotions-left">
+                            <div class="content-left-gifts">
+                                <p id="Font-content">Gói quà tặng bao gồm:</p>
+                                <p id="Font-content">- Tặng tản nhiệt nước AIO Deepcool</p>
+                                <p id="Font-content">Castle 240EX A-RGB White</p> 
+                                <p id="Font-content">- Tặng PMH 200k áp dụng cho mua gear</p>
+                                <p id="Font-content">- Giảm trực tiếp 3% khi khách hàng mua thêm</p>
+                                <p id="Font-content">tản khí hoặc pack fan</p>
+                                <p id="Font-content">- Hỗ trợ trả góp với lãi suất 0%</p>
+                            </div>
+                            <p id="select">Đang chọn</p>
+                        </div>
+                    </div>
+                    <div class="gifts-promotions-right">
+                        <img src="img/ProLapTop-gifts-promotions.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-information">
+                <div class="header-product-selection-section">
+                    <div class="rectangle"></div>
+                    <p id="font-header">THÔNG TIN SẢN PHẨM</p>
+                    <div class="rectangle"></div>
+                </div>
+                <div class="block-content">
+                    <div class="btn-block-content">
+                        <button class="tab1">Thông số kỹ thuật</button>
+                        <button class="tab2">Chi tiết sản phẩm</button>
+                        <button class="tab3">Video</button>
+                        <button class="tab4">Review sản phẩm</button>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <tr class="tht"><th  colspan="2">Thông Số Kĩ Thuật PC</th></tr>
+                            <tr>
+                                <td class="col0">CPU</td>
+                                <td class="col1">Intel Core i5 - 13600KF 14C/20T ( Up to 5.1GHz, 24MB )</td>
+                            </tr>
+                            <tr>
+                                <td class="col0">Bo Mạch Chủ</td>
+                                <td class="col1">Asus TUF GAMING B660M-PLUS WIFI D4</td>
+                            </tr>
+                            <tr>
+                                <td class="col0">RAM/td>
+                                <td class="col1">KIMTIGO Z3 Gaming RGB 16GB (8GBx2) DDR4 3200MHz</td>
+                            </tr>
+                            <tr>
+                                <td class="col0">Card Màn Hình</td>
+                                <td class="col1">Asus Dual Geforce RTX 3060 O8G White</td>
+                            </tr>
+                            <tr>
+                                <td class="col0">Nguồn</td>
+                                <td class="col1">MSI MAG A650BN 650W - 80 Plus Bronze</td>
+                            </tr>
+                            <tr>
+                                <td class="col0">Ổ Cứng</td>
+                                <td class="col1">GIGABYTE M2 2280 256GB NVMe PCI-Express 3.0 x4</td>
+                            </tr>
+                            <tr>
+                                <td class="col0">Vỏ Case</td>
+                                <td class="col1">MIK LV12 M White</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="related-products">
+                <div class="header-product-selection-section">
+                    <div class="rectangle"></div>
+                    <p id="font-header">SẢN PHẨM LIÊN QUAN</p>
+                    <div class="rectangle"></div>
+                </div>
+                <div class="related-products">
+                    <div class="list-related-products">
+                        <div class="slider">
+                            <div class="one-related-products">
+                                <div class="img-product">
+                                    <div class="parallelogram">-10%</div>
+                                    <img src="img/ProLapTop-product1.svg" alt="">
+                                </div>
+                                <div class="content-product">
+                                    <p id="title-content-product">PC Gaming - Sniper I4070 - BL</p>
+                                    <div class="quantity-content-product">
+                                        <div class="star-product">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <p id="Font-Evaluate-star">5 đánh giá</p>
+                                        </div>
+                                        <div class="price-product">
+                                            <p id="new-price-product">31.890.000 đ</p>
+                                            <p id="old-price-product">35.490.000 đ</p>
+                                        </div>
+                                    </div>
+                                    <button class="buy-now">MUA NGAY</button>
+                                </div>
+                            </div>
+                            <div class="one-related-products">
+                                <div class="img-product">
+                                    <div class="parallelogram">-13%</div>
+                                    <img src="img/ProLapTop-product2.svg" alt="">
+                                </div>
+                                <div class="content-product">
+                                    <p id="title-content-product">PC Gaming - Sniper A3070TI - BL</p>
+                                    <div class="quantity-content-product">
+                                        <div class="star-product">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <p id="Font-Evaluate-star">5 đánh giá</p>
+                                        </div>
+                                        <div class="price-product">
+                                            <p id="new-price-product">25.390.000 đ</p>
+                                            <p id="old-price-product">20.135.000 đ</p>
+                                        </div>
+                                    </div>
+                                    <button class="buy-now">MUA NGAY</button>
+                                </div>
+                            </div>
+                            <div class="one-related-products">
+                                <div class="img-product">
+                                    <div class="parallelogram">-13%</div>
+                                    <img src="img/ProLapTop-product3.svg" alt="">
+                                </div>
+                                <div class="content-product">
+                                    <p id="title-content-product">PC Gaming - Nova I3070Ti - BL</p>
+                                    <div class="quantity-content-product">
+                                        <div class="star-product">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <p id="Font-Evaluate-star">5 đánh giá</p>
+                                        </div>
+                                        <div class="price-product">
+                                            <p id="new-price-product">26.390.000 đ</p>
+                                            <p id="old-price-product">30.200.000 đ</p>
+                                        </div>
+                                    </div>
+                                    <button class="buy-now">MUA NGAY</button>
+                                </div>
+                            </div>
+                            <div class="one-related-products">
+                                <div class="img-product">
+                                    <div class="parallelogram">-18%</div>
+                                    <img src="img/ProLapTop-product4.svg" alt="">
+                                </div>
+                                <div class="content-product">
+                                    <p id="title-content-product">PC Gaming - Sniper I3060Ti - WH</p>
+                                    <div class="quantity-content-product">
+                                        <div class="star-product">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <p id="Font-Evaluate-star">5 đánh giá</p>
+                                        </div>
+                                        <div class="price-product">
+                                            <p id="new-price-product">30.790.000 đ</p>
+                                            <p id="old-price-product">37.342.000 đ</p>
+                                        </div>
+                                    </div>
+                                    <button class="buy-now">MUA NGAY</button>
+                                </div>
+                            </div>
+                            <div class="one-related-products">
+                                <div class="img-product">
+                                    <div class="parallelogram">-13%</div>
+                                    <img src="img/ProLapTop-product5.svg" alt="">
+                                </div>
+                                <div class="content-product">
+                                    <p id="title-content-product">PC Gaming - Nova A3070Ti- WH</p>
+                                    <div class="quantity-content-product">
+                                        <div class="star-product">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <p id="Font-Evaluate-star">5 đánh giá</p>
+                                        </div>
+                                        <div class="price-product">
+                                            <p id="new-price-product">32.190.000 đ</p>
+                                            <p id="old-price-product">37.156.000 đ</p>
+                                        </div>
+                                    </div>
+                                    <button class="buy-now">MUA NGAY</button>
+                                </div>
+                            </div>
+                            <div class="one-related-products">
+                                <div class="img-product">
+                                    <div class="parallelogram">-13%</div>
+                                    <img src="img/ProLapTop-product6.svg" alt="">
+                                </div>
+                                <div class="content-product">
+                                    <p id="title-content-product">PC Gaming - Nova I3060 - WH</p>
+                                    <div class="quantity-content-product">
+                                        <div class="star-product">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <p id="Font-Evaluate-star">5 đánh giá</p>
+                                        </div>
+                                        <div class="price-product">
+                                            <p id="new-price-product">32.890.000 đ</p>
+                                            <p id="old-price-product">36.490.000 đ</p>
+                                        </div>
+                                    </div>
+                                    <button class="buy-now">MUA NGAY</button>
+                                </div>
+                            </div>
+                            <div class="one-related-products">
+                                <div class="img-product">
+                                    <div class="parallelogram">-10%</div>
+                                    <img src="img/ProLapTop-product7.svg" alt="">
+                                </div>
+                                <div class="content-product">
+                                    <p id="title-content-product">PC Gaming - Sniper 3060 ITX</p>
+                                    <div class="quantity-content-product">
+                                        <div class="star-product">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <p id="Font-Evaluate-star">5 đánh giá</p>
+                                        </div>
+                                        <div class="price-product">
+                                            <p id="new-price-product">29.799.000 đ</p>
+                                            <p id="old-price-product">32.070.000 đ</p>
+                                        </div>
+                                    </div>
+                                    <button class="buy-now">MUA NGAY</button>
+                                </div>
+                            </div>
+                            <div class="one-related-products">
+                                <div class="img-product">
+                                    <div class="parallelogram">-8%</div>
+                                    <img src="img/ProLapTop-product8.svg" alt="">
+                                </div>
+                                <div class="content-product">
+                                    <p id="title-content-product">PC Gaming - Sniper I4070 - BL</p>
+                                    <div class="quantity-content-product">
+                                        <div class="star-product">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <img src="img/star.svg" alt="" srcset="">
+                                            <p id="Font-Evaluate-star">5 đánh giá</p>
+                                        </div>
+                                        <div class="price-product">
+                                            <p id="new-price-product">31.890.000 đ</p>
+                                            <p id="old-price-product">35.490.000 đ</p>
+                                        </div>
+                                    </div>
+                                    <button class="buy-now">MUA NGAY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-left"><img src="img/arrowleft.svg" alt=""></button>
+                        <button class="btn-right"><img src="img/arrowright.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img-right">
+            <img src="img/btndong2.jpg" alt="">
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-information">
+            <div class="frame-header-footer">
+                <div class="frame-general-information">
+                    <p id="title-header">Thông tin chung</p>
+                    <div class="content-header" >
+                        <p id="content">Giới thiệu TNC Store</p>
+                        <p id="content">Tuyển dụng</p>
+                        <p id="content">Tin tức</p>
+                        <p id="content">Ý kiến khách hàng</p>
+                        <p id="content">Liện hệ hợp tác</p>
+                    </div>
+                </div>
+                <div class="frame-policy">
+                    <p id="title-header">Chính sách chung</p>
+                    <div class="content-header">
+                        <p id="content">Quy định chung</p>
+                        <p id="content">Chính sách vận chuyển</p>
+                        <p id="content">Chính sách bảo hành</p>
+                        <p id="content">Chính sách đổi, trả lại hàng</p>
+                        <p id="content">Chính sách cho doanh nghiệp</p>
+                    </div>
+                </div>
+                <div class="promotion">
+                    <p id="title-header">Thông tin khuyến mãi</p>
+                    <div class="content-header">
+                        <p id="content">Sản phẩm bán chạy</p>
+                        <p id="content">Sản phẩm khuyến mãi</p>
+                        <p id="content">Hàng thanh lý</p>
+                        <p id="content"><br></p>
+                        <p id="content"><br></p>
+                    </div>
+                </div>
+                <div class="fllow-us">
+                    <p id="title-header">Follow us!</p>
+                    <div class="img-footer">
+                        <img src="img/fb-white.svg" alt="">
+                        <img src="img/yt-white.svg" alt="">
+                        <img src="img/shop-white.svg" alt="">
+                        <img src="img/ins-white.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="frame-tail">
+                <div class="content-tail">
+                    <p id="title-header">Công ty TNHH Thương mại & Tin học Tú Nguyệt</p>
+                    <div class="content-tail-address">
+                        <p id="content">Showroom : 172 Lê Thanh Nghị, Phường Đồng Tâm, Quận Hai Bà Trưng, Hà Nội / Tel: (024) 36288790 / (086) 830.2123</p>
+                        <p id="content">Trung tâm bảo hành : 172 Lê Thanh Nghị, Phường Đồng Tâm, Quận Hai Bà Trưng, Hà Nội / Tel: (098) 978 1468</p>
+                        <p id="content">Trụ sở (Không bán hàng): 11 Vũ Thạnh - Cát Linh - Đống Đa - Hà Nội / Tel: (086) 8302123; Fax : (024) 36288790</p>
+                    </div>
+                </div class="logo">
+                    <img src="img/logo-dma.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-tail">
+            <div class="frame-footer-tail">
+                <div class="content-footer-tail">
+                    <p>© 2020 - Bản quyền của Công ty TNHH Thương mại & Tin học Tú Nguyệt</p>
+                </div>
+                <div class="img-footer-tail">
+                    <img src="img/tien-mat.svg" alt="">
+                    <img src="img/internet-bank.svg" alt="">
+                    <img src="img/mastercard.svg" alt="">
+                    <img src="img/visa.svg" alt="">
+                    <img src="img/bo-cong-thuong.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/activityProLapTop.js"></script>
+</body>
+</html>
