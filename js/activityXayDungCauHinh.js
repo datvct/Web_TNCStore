@@ -20,13 +20,3 @@ btnclose.addEventListener("click", function(){
 })
 
 
-$(document).ready(function(){
-  $('#item').slick({
-    lazyLoad: 'true',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: $('.btn-left-banner'),
-    nextArrow: $('.btn-right-banner'),
-  });
-});
-

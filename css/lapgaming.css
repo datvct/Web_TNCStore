@@ -376,21 +376,12 @@
 }
 
 
-.item .block-slider-item{
-    /* display: grid;
-    justify-content: space-between;
-    grid-template-columns: 540px 540px ;
-    grid-template-rows: 540px 540px ;
-    gap: 20px; */
-    display: flex;
-    flex-wrap: wrap;
-}
 .block-slider-item img{
     max-width: 100%;
 }
 .block-slider .btn-left-banner{
     position: relative;
-    top:-550px;
+    top:-300px;
     background-color: #99a0ad;
     border: none;
     height: 40px;
@@ -399,7 +390,7 @@
 }
 .btn-right-banner{
     position: relative;
-    top: -550px;
+    top: -300px;
     right: 0;
     left:1025px;
     background-color: #99a0ad;
@@ -439,6 +430,22 @@
     width: 40px;
     opacity: 0.7;
 }
+
+.suport{
+    width: 1110px;
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+}
+.advantage{
+    width: 255px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F0F3FC;
+}
+
 .img-left{
     position: sticky;
     top: 50px;

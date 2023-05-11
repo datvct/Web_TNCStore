@@ -20,3 +20,15 @@ for (var i = 0; i < showMoreBtns.length; i++) {
     longDescription.style.maxHeight = height;
   });
 }
+
+
+
+$(document).ready(function(){
+  $('#item').slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: $('.btn-left-banner'),
+    nextArrow: $('.btn-right-banner'),
+  });
+});
